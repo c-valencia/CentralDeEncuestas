@@ -1,1 +1,2 @@
 # CentralDeEncuestas
+Este proyecto tiene la finalidad de centralizar todas las respuesta de las encuestas realizadas por medios como Web, mensaje de texto entre otros. Para la parte Web se debe tener varias opciones de pregunta.
