@@ -1,0 +1,27 @@
+<ion-header>
+  
+  <ion-toolbar>
+    <ion-title><ion-icon name="arrow-back-outline"  [routerLink]="['/home']"></ion-icon> LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="container">
+
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="clave"></ion-input>
+    </ion-item>
+
+    <ion-button  (click)="iniciarSesion()">Iniciar sesion</ion-button>
+    <ion-button [routerLink]="['/registro']">Crear cuenta</ion-button>
+
+  </div>
+
+</ion-content>

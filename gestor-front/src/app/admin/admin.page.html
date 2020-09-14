@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="arrow-back-outline"  [routerLink]="['/login']"></ion-icon> ADMINISTRADOR
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Gestor de encuestas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    
+    <ion-item>
+      <ion-button [routerLink]="['/contacto']">CREAR CONTACTO</ion-button>
+    </ion-item>  
+    <ion-item>
+       <ion-button [routerLink]="['/correspondencia']">ENVIAR ENCUESTA</ion-button>
+    </ion-item>
+</div>
+</ion-content>

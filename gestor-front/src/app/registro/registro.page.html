@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><ion-icon name="arrow-back-outline"  [routerLink]="['/login']"></ion-icon>REGISTRO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Tipo documento:</ion-label>
+        <ion-input type="text" [(ngModel)]="tipoDocumento"></ion-input>
+      </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Numero documento:</ion-label>
+        <ion-input type="text" [(ngModel)]="numDocumento"></ion-input>
+      </ion-item>
+    <ion-item>
+    <ion-label floating>Nombre:</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+
+    <ion-item>
+    <ion-label floating>Apellido:</ion-label>
+      <ion-input type="text" [(ngModel)]="apellido"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Celular:</ion-label>
+        <ion-input type="text" [(ngModel)]="celular"></ion-input>
+      </ion-item>
+
+    <ion-item>
+    <ion-label floating>Correo</ion-label>
+      <ion-input type="email" [(ngModel)]="correo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Usuario:</ion-label>
+        <ion-input type="text" [(ngModel)]="username"></ion-input>
+      </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Clave:</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-button (click)="crearUsuario()">Crear cuenta</ion-button>
+  </ion-item>
+
+
+</ion-content>

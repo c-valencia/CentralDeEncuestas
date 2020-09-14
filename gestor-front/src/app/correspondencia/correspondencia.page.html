@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><ion-icon name="arrow-back-outline"  [routerLink]="['/login']"></ion-icon>CORRESPONDENCIA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label>Contacto:</ion-label>
+      <ion-select placeholder="Seleccione" name="canal" [(ngModel)]="contacto" >
+        <ion-select-option value="{{contac.num_documento}}" *ngFor="let contac of contactos">{{contac.nombre + ' ' + contac.apellido}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Enlace:</ion-label>
+      <ion-input type="text"  name="enlace" [(ngModel)]="enlace"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Observación:</ion-label>
+      <ion-textarea  name="observacion" [(ngModel)]="observacion"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>Canal:</ion-label>
+      <ion-select placeholder="Seleccione" name="canal" [(ngModel)]="canal">
+        <ion-select-option value="Correo">Correo</ion-select-option>
+        <ion-select-option value="WhatsApp">WhatsApp</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+    
+    <ion-button (click)="enviar()">Enviar</ion-button>
+  
+</ion-content>
